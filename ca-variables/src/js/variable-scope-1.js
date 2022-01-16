@@ -8,12 +8,13 @@ export function demo() {
 // (as shown in the if statement below) 
 // are hoisted to the top of the block.
 var x = 1;
+//is x equal === to 1. (yes/true) then inside brackets run. otherwise it will not run inside brackets(no/false)
 if (x === 1) {
-  var x = 2;
+  var x = 2;//this x is relevant inside the block. only exists till the code runs the block then its done.
   console.log(x);
   // expected output: 2
 }
-console.log(x);
+console.log(x);//this x is lined up to line 10 var x
 // expected output: 1
 // but it has changed to 2
 

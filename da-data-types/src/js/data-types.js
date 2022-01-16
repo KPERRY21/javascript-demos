@@ -30,6 +30,8 @@ const mySymbol = Symbol();
 console.log(mySymbol);
 console.log(typeof mySymbol);
 
+
+//In an array you can mix strings and numbers
 // REFERENCE TYPES - Objects are stored on the heap
 // Array
 const myArray = ['Hi', 'Hello', 55];

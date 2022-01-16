@@ -20,12 +20,12 @@ export function demo() {
 // VAR
 var myName;
 console.log(myName);
-myName = 'John';
+myName = 'John';//can be string
 console.log(myName);
-myName = 123;
+myName = 123;//or number int java can switch between string and int
 console.log(myName);
 
-// LET
+// LET same a var can bee undefined or string, int bool etc.
 let myName3;
 console.log(myName3);
 myName3 = 'Jim';
@@ -33,7 +33,7 @@ console.log(myName3);
 myName3 = 123;
 console.log(myName3);
 
-// CONST
+// CONST has to be initalized and can not reassign the value
 const myName5 = 'James';
 console.log(myName5);
 // Can not reassign
@@ -41,12 +41,12 @@ console.log(myName5);
 // Have to assign a value at declaration
 //const myName6;
 
-// CONST Literal Object
+// CONST Literal Object Key Value Pair
 const person = {
   name: 'John',
   age: 30
 }
-console.log(person);
+console.log(person);// this is a complex type so the inner guts can be changed
 // person = {
 //   name: 'Jim',
 //   age: 35
@@ -60,9 +60,9 @@ console.log(person);
 const numbers = [1,2,3,4,5];
 console.log(numbers);
 // You can't do this
-//numbers = [1,2,3,4,5,6]
+//numbers = [1,2,3,4,5,6]//This will not work because we are trying to change all the numbers in the array.
 // but you can mutate it with
-numbers.push(6);
-console.log(numbers);
+numbers.push(6);//This will work because all we are doing is adding a (6) to the end of the Array.
+console.log(numbers);//This printed out the wholw array
 
 }
